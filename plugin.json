@@ -2,8 +2,7 @@
   "description": "An example plugin that emits random events periodically.",
   "icon": "icon.png",
   "command": "boundary-meter init.lua",
-  "metrics": [
-  ],
+  "metrics": [ "DUMMY_METRIC" ], 
   "paramSchema": [
     {
       "title": "Interval (ms)",
@@ -12,6 +11,6 @@
       "type": "number",
       "default": "5000",
       "required": true
-    },
+    }
   ]
 }
