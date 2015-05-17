@@ -1,0 +1,17 @@
+{
+  "description": "An example plugin that emits random events periodically.",
+  "icon": "icon.png",
+  "command": "boundary-meter init.lua",
+  "metrics": [
+  ],
+  "paramSchema": [
+    {
+      "title": "Interval (ms)",
+      "name": "pollInterval",
+      "description": "Interval in milliseconds between events",
+      "type": "number",
+      "default": "5000",
+      "required": true
+    },
+  ]
+}
