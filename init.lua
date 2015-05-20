@@ -10,7 +10,10 @@
 -- distributed under the License is distributed on an "AS IS" BASIS,
 -- WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 -- See the License for the specific language governing permissions and
--- limitations under the License.ocal framework = require('framework')
+-- limitations under the License.
+--
+-- @author Gabriel Nicolas Avellaneda <avellaneda.gabriel@gmail.com>
+-- @copyright 2015 Boundary, Inc
 
 local framework = require('framework')
 local Plugin = framework.Plugin
@@ -38,7 +41,7 @@ local ds = DataSource:new(randomEvent)
 
 local plugin = Plugin:new(params, ds)
 function plugin:onParseValues(data)
-  self:emitEvent(data, 'An ' .. data .. ' event.')
+  self:emitEvent(data, data:upper() .. ' event fired!.')
 end
 
 plugin:run()
